@@ -1,0 +1,22 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import LandingPage from './pages/LandingPage';
+import RoomPage from './pages/RoomPage';
+import { RoomProvider } from './state/RoomContext';
+import './styles/global.css';
+
+function App() {
+  return (
+    <RoomProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/room/:roomId" element={<RoomPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </Router>
+    </RoomProvider>
+  );
+}
+
+export default App;

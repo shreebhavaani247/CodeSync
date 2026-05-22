@@ -1,0 +1,13 @@
+{
+  "name": "codesync-v2",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "frontend:install": "cd frontend && npm install",
+    "server:install": "cd server && npm install",
+    "install-all": "npm run frontend:install && npm run server:install",
+    "frontend:dev": "cd frontend && npm run dev",
+    "server:dev": "cd server && npm run dev",
+    "dev": "npm run server:dev & npm run frontend:dev"
+  }
+}

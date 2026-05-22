@@ -1,0 +1,27 @@
+{
+  "name": "codesync-server",
+  "version": "1.0.0",
+  "description": "Real-time collaborative system backend",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "socket.io",
+    "realtime",
+    "collaboration"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.15.2",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^4.22.1",
+    "node-fetch": "^3.3.2",
+    "socket.io": "^4.8.3"
+  }
+}
